@@ -1,10 +1,10 @@
-### Molson-Coors-Recommender-System
+# Molson-Coors-Recommender-System
 
 🧠 Project Overview
 This project builds a recommender system to encourage Budweiser customers to try Molson Coors products, using real retail transaction data from the ACSE grocery chain. The dataset captures actual customer behavior across millions of purchases, spanning thousands of products, stores, and time periods — making it ideal for testing real-world recommendation strategies
 
 📊 Dataset & Tools
-Worked with a 1B+ row transanction dataset (not uploaded due to size). This was converted to parquet format for size optimization
+Worked with a 1B+ row transaction dataset (not uploaded due to size). This was converted to parquet format for size optimization
 
 Used DuckDB and GCP BigQuery for efficient SQL querying
 
