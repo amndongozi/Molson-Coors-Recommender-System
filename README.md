@@ -16,23 +16,21 @@ Target Budweiser buyers and recommend Molson products to increase cross-brand sa
 
 🧪 Baseline
 
-19.07% of Budweiser customers already purchased Molson — this served as the baseline conversion rate
+- 19.07% of Budweiser customers already purchased Molson — this served as the baseline conversion rate
 
-We used this to measure lift for each model
+- We used this to measure lift for each model
 
 🤖 Models Tested
 
-Popularity-Based (best performance)
+- Popularity-Based (best performance)
 
-Item-Based & User-Based CF
+- Item-Based & User-Based CF
 
-Content-Based (TF-IDF)
+- Content-Based (TF-IDF)
 
-ALS (Matrix Factorization)
+- ALS (Matrix Factorization)
 
-BPR (Bayesian Personalized Ranking)
-
-Naive Bayes Classifier
+- BPR (Bayesian Personalized Ranking)
 
 🏆 Results
 
