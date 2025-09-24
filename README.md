@@ -1,26 +1,27 @@
-# Molson-Coors-Recommender-System
+***Recommender System for a Grocery Chain***
 
-🧠 Project Overview
+**Project Overview**
 
-This project builds a recommender system to encourage Budweiser customers to try Molson Coors products, using real retail transaction data from the ACSE grocery chain. The dataset captures actual customer behavior across millions of purchases, spanning thousands of products, stores, and time periods — making it ideal for testing real-world recommendation strategies
+This project builds a recommender system to encourage Budweiser customers to try Molson Coors products, using real retail transaction data from the ACSE grocery chain. The dataset captures actual customer behavior across millions of purchases, spanning thousands of products, stores, and time periods — making it ideal for testing real-world recommendation strategies.
 
-📊 Dataset & Tools
+**Dataset & Tools**
 
-- Worked with a 1B+ row transaction dataset (not uploaded due to size). This was converted to parquet format for size optimization
-- Used DuckDB and GCP BigQuery for efficient SQL querying
-- Performed 10% stratified sampling, validated with KS and Chi-Square tests to ensure accurate statistical depiction of original dataset.
+- Data: a 1B+ row transaction dataset (not uploaded due to size). This was converted to parquet format for query optimization
+- Tools: DuckDB efficient SQL querying  and GCP BigQuery for querying and storing the large dataset
 
-🎯 Goal
+**Project Goal**
 
-Target Budweiser buyers and recommend Molson products to increase cross-brand sales.
+The recomender system aims to target Budweiser buyers and recommend Molson products to increase cross-brand sales.
 
-🧪 Baseline
+**Data Processing**
 
-- 19.07% of Budweiser customers already purchased Molson — this served as the baseline conversion rate
+- Performed 10% stratified sampling, validated with KS (Kolmogorov–Smirnov Test) and Chi-Square tests to ensure accurate statistical depiction of original dataset.
+  - The KS test: compares two distributions to see if they are different. The test checks for the distance between two CDF curves and calculates the p-value.
+- 19.07% of Budweiser customers already purchased Molson — this served as the baseline conversion rate. This was used to measure lift for each model.
+  -  A lift > 1 means the model is not randomly guessing.
+  -  Lift = model success rate ÷ baseline success rate
 
-- We used this to measure lift for each model
-
-🤖 Models Tested
+**Recomender Systems**
 
 - Popularity-Based (best performance)
 
@@ -32,10 +33,10 @@ Target Budweiser buyers and recommend Molson products to increase cross-brand sa
 
 - BPR (Bayesian Personalized Ranking)
 
-🏆 Results
+**Results**
 
-- Popularity model achieved a 52% lift over baseline
+- The popularity model achieved a 52% lift over the baseline. 
 
-- BPR showed potential for long-term personalization
+- BPR showed potential for long-term personalization.
 
-- Other models struggled due to matrix sparsity and low co-purchase signals
+- Other models struggled due to matrix sparsity and low co-purchase signals.
