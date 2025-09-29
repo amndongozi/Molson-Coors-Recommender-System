@@ -1,4 +1,4 @@
-# **Recommender System for a Grocery Chain***
+# **Recommender System for a Grocery Chain**
 
 ## **Project Overview**
 
